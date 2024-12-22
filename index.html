@@ -14,6 +14,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"
 		rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-OPgoSTMBT1dY8Ar86jxIw9jIDhq/5Rp3knSuZBo5yZuwKJj8h6OS7NY2ZtHln2+g" crossorigin="anonymous">
 
 	<script>
 		// This code is inlined in the head to make dark mode instant & blocking.
@@ -43,11 +46,16 @@
 	<link rel="stylesheet" href="css/about.93ec11f1.css" />
 	<script type="module">addEventListener("load", () => document.documentElement.classList.add("loaded")); class i extends HTMLElement { constructor() { super(), this.appendChild(this.querySelector("template").content.cloneNode(!0)); const e = this.querySelector("button"), t = document.getElementById("menu-content"); t.hidden = !0; const n = s => { e.setAttribute("aria-expanded", s ? "true" : "false"), t.hidden = !s }; e.addEventListener("click", () => n(t.hidden)); const d = s => { n(s.matches), e.hidden = s.matches }, c = window.matchMedia("(min-width: 50em)"); d(c), c.addEventListener("change", d) } } customElements.define("menu-button", i); class r extends HTMLElement { constructor() { super(); const e = this.querySelector("button"), t = n => { document.documentElement.classList[n ? "add" : "remove"]("theme-dark"), e.setAttribute("aria-pressed", String(n)) }; e.addEventListener("click", () => t(!this.isDark())), t(this.isDark()) } isDark() { return document.documentElement.classList.contains("theme-dark") } } customElements.define("theme-toggle", r);
 	</script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-QH9G1pS1ppc+oH6hyBd6Fou8HR6lcccaPQLSO9jpVlFUwDunFlfh/OFn2KzW3SQX"
+		crossorigin="anonymous"></script>
 </head>
 
+
 <body class="astro-37FXCHFA">
-	<div class="stack backgrounds astro-37FXCHFA">
-		<nav class="astro-DMQPWCEC">
+	<div class="stack backgrounds astro-37FXCHFA container">
+		<nav class="astro-DMQPWCEC row">
 			<div class="menu-header astro-DMQPWCEC">
 				<a href="index.html" class="site-title astro-DMQPWCEC">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
@@ -177,14 +185,14 @@
 			</div>
 		</nav>
 
-		<div class="stack gap-20 lg:gap-48 astro-J7PV25F6">
-			<div class="wrapper stack gap-8 lg:gap-20 astro-J7PV25F6">
-				<header class="hero astro-J7PV25F6">
+		<div class="stack gap-20 lg:gap-48 astro-J7PV25F6 container">
+			<div class="wrapper stack gap-8 lg:gap-20 astro-J7PV25F6 row">
+				<header class="hero astro-J7PV25F6 row">
 					<header class="hero stack gap-4 start astro-BBE6DXRZ">
 						<div class="stack gap-2 astro-BBE6DXRZ">
 							<h1 class="title astro-BBE6DXRZ">Salut, je me nomme Jordan Tatue</h1>
 							<p class="tagline astro-BBE6DXRZ">
-								Je suis ingénieur informatique diplômé du groupe 3IL a Limoges en France. Je suis
+								Je suis futur ingénieur informatique formé au sein du groupe 3IL a Limoges en France. Je suis
 								passionné par le developpement,
 								l'IA et l'apprentissage automatique des modèles de données, ainsi que les challenges
 								autour.</p>
@@ -229,108 +237,113 @@
 						</div>
 
 					</header>
-
 					<img alt="Jordan" width="480" height="620" src="images/portrait.jpg" class="astro-J7PV25F6">
 				</header>
 
-				<section class="box skills astro-AB4IHPZS d-flex">
-					<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
-							aria-hidden="true" stroke="url(#icon-gradient-381m31gp0)"
-							fill="url(#icon-gradient-381m31gp0)" style="--size:2.5rem" class="astro-PATNJMLL">
-							<g class="astro-PATNJMLL">
-								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-									d="m64 88-48 40 48 40m128-80 48 40-48 40M160 40 96 216" />
-							</g>
-							<linearGradient id="icon-gradient-381m31gp0" x1="23" x2="235" y1="43" y2="202"
-								gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
-								<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
-								<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
-								<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
-							</linearGradient>
-						</svg>
-						<h2 class="astro-AB4IHPZS">développement Full Stack</h2>
-						<p class="astro-AB4IHPZS">Réalisation de cahier de charge, modélisation des projets avec les
-							méthodes telles UM, Conception et developpement en plusieurs languages et frameWorks.</p>
+				<section class="row box skills astro-AB4IHPZS ml-5">
+					<div class="row">
+						<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS col-md-6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
+								aria-hidden="true" stroke="url(#icon-gradient-381m31gp0)"
+								fill="url(#icon-gradient-381m31gp0)" style="--size:2.5rem" class="astro-PATNJMLL">
+								<g class="astro-PATNJMLL">
+									<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+										d="m64 88-48 40 48 40m128-80 48 40-48 40M160 40 96 216" />
+								</g>
+								<linearGradient id="icon-gradient-381m31gp0" x1="23" x2="235" y1="43" y2="202"
+									gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+									<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
+									<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
+									<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
+								</linearGradient>
+							</svg>
+							<h2 class="astro-AB4IHPZS">développement Full Stack</h2>
+							<p class="astro-AB4IHPZS">Réalisation de cahier de charge, modélisation des projets avec les
+								méthodes telles UM, Conception et developpement en plusieurs languages et frameWorks.
+							</p>
+						</div>
+						<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS col-md-6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
+								aria-hidden="true" stroke="url(#icon-gradient-31wfgdvkg)"
+								fill="url(#icon-gradient-31wfgdvkg)" style="--size:2.5rem" class="astro-PATNJMLL">
+								<g class="astro-PATNJMLL">
+									<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+										d="M56 56v55.1c0 39.7 31.8 72.6 71.5 72.9a72 72 0 0 0 72.5-72V56a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8Zm40 168h64m-32-40v40" />
+									<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+										d="M198.2 128h9.8a32 32 0 0 0 32-32V80a8 8 0 0 0-8-8h-32M58 128H47.9a32 32 0 0 1-32-32V80a8 8 0 0 1 8-8h32" />
+								</g>
+								<linearGradient id="icon-gradient-31wfgdvkg" x1="23" x2="235" y1="43" y2="202"
+									gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+									<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
+									<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
+									<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
+								</linearGradient>
+							</svg>
+							<h2 class="astro-AB4IHPZS">Gestion de projet en agile</h2>
+							<p class="astro-AB4IHPZS">Utilisation des outils de plannification de projets tel MS
+								Project,
+								SCRUM, JIRA.</p>
+						</div>
 					</div>
-					<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
-							aria-hidden="true" stroke="url(#icon-gradient-31wfgdvkg)"
-							fill="url(#icon-gradient-31wfgdvkg)" style="--size:2.5rem" class="astro-PATNJMLL">
-							<g class="astro-PATNJMLL">
-								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-									d="M56 56v55.1c0 39.7 31.8 72.6 71.5 72.9a72 72 0 0 0 72.5-72V56a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8Zm40 168h64m-32-40v40" />
-								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-									d="M198.2 128h9.8a32 32 0 0 0 32-32V80a8 8 0 0 0-8-8h-32M58 128H47.9a32 32 0 0 1-32-32V80a8 8 0 0 1 8-8h32" />
-							</g>
-							<linearGradient id="icon-gradient-31wfgdvkg" x1="23" x2="235" y1="43" y2="202"
-								gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
-								<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
-								<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
-								<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
-							</linearGradient>
-						</svg>
-						<h2 class="astro-AB4IHPZS">Gestion de projet en agile</h2>
-						<p class="astro-AB4IHPZS">Utilisation des outils de plannification de projets tel MS Project,
-							SCRUM, JIRA.</p>
-					</div>
-					<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
-							aria-hidden="true" stroke="url(#icon-gradient-270sxdhka)"
-							fill="url(#icon-gradient-270sxdhka)" style="--size:2.5rem" class="astro-PATNJMLL">
-							<g class="astro-PATNJMLL">
-								<circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round"
-									stroke-linejoin="round" stroke-width="16" />
-								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-									d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14" />
-							</g>
-							<linearGradient id="icon-gradient-270sxdhka" x1="23" x2="235" y1="43" y2="202"
-								gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
-								<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
-								<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
-								<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
-							</linearGradient>
-						</svg>
-						<h2 class="astro-AB4IHPZS">Systèmes et réseaux (TCP/IP)</h2>
-						<p class="astro-AB4IHPZS">Connaissance de base dans la configuration des réseaux et
-							l'administration des systèmes Linux et Windows.</p>
-					</div>
-					<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS">
-						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
-							aria-hidden="true" stroke="url(#icon-gradient-270sxdhka)"
-							fill="url(#icon-gradient-270sxdhka)" style="--size:2.5rem" class="astro-PATNJMLL">
-							<g class="astro-PATNJMLL">
-								<circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round"
-									stroke-linejoin="round" stroke-width="16" />
-								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
-									d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14" />
-							</g>
-							<linearGradient id="icon-gradient-270sxdhka" x1="23" x2="235" y1="43" y2="202"
-								gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
-								<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
-								<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
-								<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
-							</linearGradient>
-						</svg>
-						<h2 class="astro-AB4IHPZS">Machine Learning et IA</h2>
-						<p class="astro-AB4IHPZS">conception et entrainement de modèles (regression et classification), Exploration de données (Data mining)</p>
+					<div class="row">
+						<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS col-md-6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
+								aria-hidden="true" stroke="url(#icon-gradient-270sxdhka)"
+								fill="url(#icon-gradient-270sxdhka)" style="--size:2.5rem" class="astro-PATNJMLL">
+								<g class="astro-PATNJMLL">
+									<circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round"
+										stroke-linejoin="round" stroke-width="16" />
+									<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+										d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14" />
+								</g>
+								<linearGradient id="icon-gradient-270sxdhka" x1="23" x2="235" y1="43" y2="202"
+									gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+									<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
+									<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
+									<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
+								</linearGradient>
+							</svg>
+							<h2 class="astro-AB4IHPZS">Systèmes et réseaux (TCP/IP)</h2>
+							<p class="astro-AB4IHPZS">Connaissance de base dans la configuration des réseaux et
+								l'administration des systèmes Linux et Windows.</p>
+						</div>
+						<div class="stack gap-2 lg:gap-4 astro-AB4IHPZS col-md-6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
+								aria-hidden="true" stroke="url(#icon-gradient-270sxdhka)"
+								fill="url(#icon-gradient-270sxdhka)" style="--size:2.5rem" class="astro-PATNJMLL">
+								<g class="astro-PATNJMLL">
+									<circle cx="128" cy="128" r="60" fill="none" stroke-linecap="round"
+										stroke-linejoin="round" stroke-width="16" />
+									<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+										d="M128 36V16M63 63 49 49m-13 79H16m47 65-14 14m79 13v20m65-47 14 14m13-79h20m-47-65 14-14" />
+								</g>
+								<linearGradient id="icon-gradient-270sxdhka" x1="23" x2="235" y1="43" y2="202"
+									gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+									<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
+									<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
+									<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
+								</linearGradient>
+							</svg>
+							<h2 class="astro-AB4IHPZS">Machine Learning et IA</h2>
+							<p class="astro-AB4IHPZS">conception et entrainement de modèles (regression et
+								classification), Exploration de données (Data mining)</p>
+						</div>
 					</div>
 				</section>
 			</div>
 
-			<main class="wrapper stack gap-20 lg:gap-48 astro-J7PV25F6">
-				<section class="section with-background with-cta astro-J7PV25F6">
-					<header class="section-header stack gap-2 lg:gap-4 astro-J7PV25F6">
+			<main class="wrapper stack gap-20 lg:gap-48 astro-J7PV25F6 container">
+				<section class="section with-background with-cta astro-J7PV25F6 row">
+					<header class="section-header stack gap-2 lg:gap-4 astro-J7PV25F6 col-12">
 						<h3 class="astro-J7PV25F6">Mes projects</h3>
 						<p class="astro-J7PV25F6">Visualiser mes derniers projects.</p>
 					</header>
 
-					<div class="gallery astro-J7PV25F6">
+					<div class="gallery astro-J7PV25F6 col-12">
 						<ul class="grid offset astro-VC5TSDMU">
 							<li class="astro-J7PV25F6">
 								<a class="card astro-LGKM4U2A" href="work/nested/duvet-genius/index.html">
 									<span class="title astro-LGKM4U2A">Snap-Faces | Angular</span>
-									<!--< src={data.video} alt={data.img_alt || ''} loading="lazy" decoding="async" />-->
 									<iframe width="400" height="400" src="https://youtube.com/embed/wMjSthcGC6M"
 										title="Snap-Faces | Angular" frameborder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -341,7 +354,6 @@
 								<a class="card astro-LGKM4U2A" href="work/markdown-mystery-tour/index.html">
 									<span class="title astro-LGKM4U2A">Plannification et conception d&#39;une solution
 										informatique pour une association sportive</span>
-									<!--< src={data.video} alt={data.img_alt || ''} loading="lazy" decoding="async" />-->
 									<iframe width="400" height="400" src="https://www.youtube.com/embed/exJkZ0fLiWY"
 										title="Plannification et conception d'une solution informatique pour une association sportive"
 										frameborder="0"
@@ -352,7 +364,6 @@
 							<li class="astro-J7PV25F6">
 								<a class="card astro-LGKM4U2A" href="work/bloom-box/index.html">
 									<span class="title astro-LGKM4U2A">Site de commande</span>
-									<!--< src={data.video} alt={data.img_alt || ''} loading="lazy" decoding="async" />-->
 									<iframe width="400" height="400" src="https://www.youtube.com/embed/pw1yJ2cXEiA"
 										title="Site de commande" frameborder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -363,7 +374,6 @@
 								<a class="card astro-LGKM4U2A" href="work/h20/index.html">
 									<span class="title astro-LGKM4U2A">Application de gestion des contacts en java
 										frameWork JFOX</span>
-									<!--< src={data.video} alt={data.img_alt || ''} loading="lazy" decoding="async" />-->
 									<iframe width="400" height="400" src="https://www.youtube.com/embed/0Q9OOUkNmBo"
 										title="Application de gestion des contacts en java frameWork JFOX"
 										frameborder="0"
@@ -374,7 +384,7 @@
 						</ul>
 					</div>
 
-					<div class="cta astro-J7PV25F6">
+					<div class="cta astro-J7PV25F6 col-12">
 						<a href="work/index.html" class="astro-BALV45LP">
 							View All
 							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"
@@ -390,6 +400,7 @@
 					</div>
 				</section>
 			</main>
+
 
 			<aside class="astro-RCDZUQ3A">
 				<h2 class="astro-RCDZUQ3A">Intéressé par mon profil ?</h2>
